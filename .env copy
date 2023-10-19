@@ -1,0 +1,4 @@
+PORT="9999"
+SECRET_KEY="secret key"
+DATABASE_URL_TESTING="mongodb://localhost:27017/story"
+DATABASE_URL_PRODUCTION=""

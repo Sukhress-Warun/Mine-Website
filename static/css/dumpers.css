@@ -1,0 +1,49 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image:url('../images/dumpers-background.jpg');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+* {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+#mobileMenu :nth-child(4) , .navLinks :nth-child(4) { 
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.status{
+    margin: 5vh 5%;
+    width: 90%;
+    border-collapse: collapse;
+}
+
+.status ,.status td,.status th {
+    padding: 10px 0;
+    border: 1px solid black;
+}
+
+.status tr:nth-child(even) {
+    background: #cccccc96;
+}
+
+.status tr:nth-child(odd) {
+    background: #ffffff96;
+}
+
+.status td{
+    text-align: center;
+    font-weight: 500;
+}
+
+.normal{
+    color: green;
+}
+
+.warning{
+    color: red;
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('../head.ejs') %>
+        <link rel="stylesheet" href="/css/nav.css">
+        <link rel="stylesheet" href="/css/gps.css">
+
+    </head>
+    <body>
+        <%- include('../nav.ejs', {logged: logged}) %>
+        <div id="map"></div>
+        <script
+            type="text/javascript"
+            src="https://www.bing.com/api/maps/mapcontrol?callback=initMap&key=<YOUR_API_KEY>"
+        ></script>
+        <script src="/js/gps.js"></script>
+    </body>
+</html>

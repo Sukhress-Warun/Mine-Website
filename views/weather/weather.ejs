@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../head.ejs') %>
+    <title>MINE WEATHER</title>
+    <link rel="stylesheet" href="/css/weather.css">
+    <link rel="stylesheet" href="/css/nav.css">
+
+</head>
+<body>
+
+    <%- include('../nav.ejs', {logged: logged}) %>
+    
+    <div class="row">
+        <div class="row-item" style="background-color: rgba(248, 51, 51, 0.617);">
+            <h3>TEMPERATURE</h3>
+            <hr>
+            <h1 id="temperature">37°C</h1>
+        </div>
+        <div class="row-item" style="background-color: rgba(57, 110, 255, 0.633);">
+            <h3>HUMIDITY</h3>
+            <hr>
+            <h1 id="humidity">63%</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="row-item" style="background-color: rgba(116, 255, 74, 0.647);">
+            <h3>Pressure</h3>
+            <hr>
+            <h1 id="pressure">1007 mb</h1>
+        </div>
+        <div class="row-item" style="background-color: rgba(82, 255, 238, 0.647);"> 
+            <h3>Rain</h3>
+            <hr>
+            <h1 id="rain">60.7 in</h1>
+        </div>
+    </div>
+    <!--- scripts -->
+    <script src="/js/menu.js"></script>
+    <script src="/js/weather.js"></script>
+    
+</body>
+</html>

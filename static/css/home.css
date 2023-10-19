@@ -1,0 +1,72 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.header {
+    background-color: rgba(255, 195, 161, 1);
+    height: 90px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header > img {
+    max-height: 60px;
+    width: auto;
+    margin: 10px 10px;
+}
+
+.parallax-background{
+    background-image: url("../images/background.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center 91px;
+    background-attachment: fixed;
+    width: 100%;
+    aspect-ratio: 1.49;
+    max-height: 80vh;
+}
+
+.options{
+    bottom: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.options > a{
+    width: clamp(300px,30%,500px);
+    text-decoration: none;
+    color: inherit;
+    margin: 10px;
+}
+
+.option-item {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform 0.5s ease 0s; 
+}
+
+
+.option-item:hover{
+    transform: scale(1.05, 1.05);
+}
+.option-item  img{
+    border-radius: 10px;
+    margin: 10px 0;
+}

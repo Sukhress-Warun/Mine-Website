@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../head.ejs') %>
+    <link rel="stylesheet" href="/css/dumpers.css">
+    <link rel="stylesheet" href="/css/nav.css">
+</head>
+<body >
+
+    <%- include('../nav.ejs', {logged: logged}) %>
+    <table class="status" >
+        <thead>
+            <tr>
+                <th>S.NO</th>
+                <th>DUMPER ID</th>
+                <th>STATUS</th>
+                <th>LATITUDE</th>
+                <th>LONGITUDE</th>
+            </tr>
+        </thead>
+        <tbody id="tablebody">
+        </tbody>
+    </table>
+    <script src="/js/dumpers.js"></script>
+    <script src="/js/menu.js"></script>
+
+</body>
+</html>

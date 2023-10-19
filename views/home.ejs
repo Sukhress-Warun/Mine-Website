@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./head.ejs') %>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/nav.css">
+</head>
+<body>
+    
+    <!--- nav section starts-->
+    <div class="nav-wrapper">
+        <div class="navbar">
+            <div class="branding">
+                <img src="/images/dumper.png" width="30px" height="30px">
+                <h3>MINE INFO CENTER</h3> 
+                <img src="/images/loader.png" width="30px" height="30px">
+            </div>
+            <div class="navLinks">
+                <% if(logged === true) { %>
+                    <a href="/user/signout">Signout</a>
+                <% } else { %>
+                    <a href="/user/login">Login</a>
+                <% } %>
+                <button  type="button" onclick="menuToggle()">
+                    <img src="/images/menu.png" width="30px" height="30px">
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="display-none"></div>
+    </div >
+    <!--- nav section ends -->
+    
+    <div class="parallax-background">
+
+    </div>
+    
+    <div class="options">
+        <a href="/weather">
+            <div class="option-item">
+                <img src="/images/weather.png" style="aspect-ratio: 1; width: 95%;">
+                <h3>ANALYZE WEATHER</h3>
+            </div>
+        </a>
+        <a href="/dumper/gps">
+            <div class="option-item">
+                <img src="/images/gps.jpg" style="aspect-ratio: 1; width: 95%;">
+                <h3>TRACK DUMPERS</h3>
+            </div>
+        </a>
+        <a href="/dumper/status">
+            <div class="option-item">
+                <img src="/images/collision.png" style="aspect-ratio: 1;width: 95%;">
+                <h3>LIVE DUMPER STATUS</h3>
+            </div>
+        </a>
+    </div>
+    <script src="/js/menu.js"></script>
+</body>
+</html>

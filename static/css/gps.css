@@ -1,0 +1,38 @@
+* {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+#mobileMenu :nth-child(3) , .navLinks :nth-child(3) { 
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+#map {
+  height: 95vh;
+  width: 100%;
+}
+
+.navLinks > button {
+  display: none;
+}
+
+@media only screen and (max-width: 860px) {
+
+  .navLinks > a{
+      display: inline;
+  }
+
+  .branding img , .branding h3 {
+    margin : 0 10px;
+  }
+
+  .navLinks > button {
+    display: none;
+  }
+  
+}
